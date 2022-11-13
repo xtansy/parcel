@@ -1,0 +1,31 @@
+.nav {
+    width: 100%;
+    ul {
+        @include flexRowBetween();
+        li {
+            cursor: pointer;
+        }
+    }
+    &__li {
+        margin-right: 50px;
+        color: $secondary;
+        &_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                margin-right: 8px;
+                background-repeat: no-repeat;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        &_logo {
+            margin-right: 565px;
+            font-weight: 800;
+        }
+    }
+    &__li_button {
+        margin-right: 0;
+    }
+}

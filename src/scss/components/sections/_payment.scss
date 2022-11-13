@@ -1,0 +1,71 @@
+.payment {
+    background-image: url("./img/paymentImg.png");
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px;
+    padding-top: 120px;
+    padding-bottom: 196px;
+    &__content {
+        max-width: 530px;
+        &-info {
+            h1 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 62px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-bottom: 15px;
+            }
+            p {
+                color: $secondaryLight;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 62px;
+            }
+        }
+        &-buttons {
+            display: flex;
+            svg {
+                margin-left: 7px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+        &-buttons > *:not(:last-child) {
+            margin-right: 46px;
+        }
+    }
+    &__rating {
+        margin-top: 130px;
+        &-paragraph {
+            color: $secondaryLight;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            &__item {
+                h2 {
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 36px;
+                    color: $primary;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    color: $secondary;
+                }
+            }
+        }
+        &-info > *:not(:last-child) {
+            margin-right: 80px;
+        }
+    }
+}

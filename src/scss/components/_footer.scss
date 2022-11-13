@@ -1,0 +1,87 @@
+.footer {
+    margin-top: 110px;
+    background-color: $primary;
+    padding-top: 97px;
+    padding-bottom: 89px;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-left {
+            &__text {
+                margin-bottom: 96px;
+                h3 {
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #ffffff;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #ffffff;
+                }
+            }
+            &__descr {
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #d6d5df;
+                }
+            }
+        }
+        &-right {
+            &__text {
+                margin-bottom: 32px;
+                h3 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #ffffff;
+                    margin-bottom: 12px;
+                }
+                input {
+                    margin-bottom: 10px;
+                    background: #ffffff;
+                    border-radius: 4px;
+                    border: none;
+                    padding-top: 21px;
+                    padding-bottom: 21px;
+                    padding-left: 20px;
+                    width: 100%;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #ffffff;
+                }
+            }
+            &__icons {
+                display: flex;
+                align-items: center;
+                &-item {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        color: white;
+                    }
+                    cursor: pointer;
+                    background: #5e5c6c;
+                    border-radius: 100%;
+                }
+            }
+            &__icons > *:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}

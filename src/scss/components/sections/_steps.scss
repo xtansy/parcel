@@ -1,0 +1,49 @@
+.steps {
+    padding-top: 99px;
+    padding-bottom: 93px;
+    &_upp {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_bot {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        background: #ffffff;
+        border: 1px solid #efeff4;
+        border-radius: 8px;
+        padding: 60px 40px 93px 40px;
+        max-width: 346px;
+        margin-bottom: 50px;
+        svg {
+            width: 35px;
+            height: 35px;
+            margin-bottom: 61px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: $secondaryLight;
+        }
+        h4 {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 16px;
+        }
+        &_text {
+            padding: 0;
+            h2 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+                margin-bottom: 15px;
+            }
+            max-width: 277px;
+            border: none;
+            margin-right: 87px !important;
+        }
+    }
+}
