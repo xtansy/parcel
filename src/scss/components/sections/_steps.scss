@@ -1,25 +1,29 @@
 .steps {
-    padding-top: 99px;
-    padding-bottom: 93px;
-    &_upp {
+    &__upp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__upp > *:not(:last-of-type) {
+        margin-right: 20px;
+    }
+    &__bot {
         display: flex;
         justify-content: space-between;
     }
-    &_bot {
-        display: flex;
-        justify-content: space-between;
+    &__bot > *:not(:last-of-type) {
+        margin-right: 20px;
     }
     &__item {
         background: #ffffff;
         border: 1px solid #efeff4;
         border-radius: 8px;
-        padding: 60px 40px 93px 40px;
+        padding: 81px 40px 93px 40px;
         max-width: 346px;
         margin-bottom: 50px;
-        svg {
-            width: 35px;
-            height: 35px;
-            margin-bottom: 61px;
+        img {
+            margin-left: 21px;
+            margin-bottom: 57px;
         }
         p {
             font-weight: 400;
@@ -41,9 +45,9 @@
                 line-height: 44px;
                 margin-bottom: 15px;
             }
-            max-width: 277px;
+            min-width: 342px;
             border: none;
-            margin-right: 87px !important;
+            margin-right: 25px !important;
         }
     }
 }

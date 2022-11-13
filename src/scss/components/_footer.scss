@@ -1,7 +1,7 @@
 .footer {
     margin-top: 110px;
     background-color: $primary;
-    padding-top: 97px;
+    padding-top: 75px;
     padding-bottom: 89px;
     &__content {
         display: flex;
@@ -9,15 +9,15 @@
         justify-content: space-between;
         &-left {
             &__text {
-                margin-bottom: 96px;
+                margin-bottom: 109px;
                 h3 {
                     font-weight: 800;
                     font-size: 18px;
                     line-height: 18px;
                     color: #ffffff;
-                    margin-bottom: 20px;
                 }
                 p {
+                    margin-top: 20px;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 24px;
@@ -26,6 +26,10 @@
             }
             &__descr {
                 p {
+                    span {
+                        display: block;
+                        margin-top: 7px;
+                    }
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 14px;
@@ -34,6 +38,10 @@
             }
         }
         &-right {
+            min-width: 347px;
+            min-height: 223px;
+            margin-top: 18px;
+            margin-right: -3px;
             &__text {
                 margin-bottom: 32px;
                 h3 {

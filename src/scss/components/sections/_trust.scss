@@ -1,7 +1,7 @@
 .trust {
     color: $primary;
-    margin-top: 110px;
-    margin-bottom: 110px;
+    margin-top: 60px;
+    margin-bottom: 142px;
     padding: 50px 0;
     &__title {
         font-weight: 700;
@@ -15,20 +15,19 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         &_upp {
-            margin-top: 46px;
+            margin-top: 44px;
             justify-content: space-between;
         }
         &_bot {
-            margin-top: 40px;
+            margin-top: 34px;
             justify-content: center;
         }
         &-item {
             display: flex;
             align-items: center;
-            svg {
+            img {
                 width: 30px;
                 height: 30px;
-                background-repeat: no-repeat;
             }
             &__text {
                 font-weight: 600;
@@ -38,13 +37,13 @@
                 margin-left: 12px;
             }
             &_synthetix {
-                svg {
-                    width: 225px;
+                img {
+                    width: 224px;
                     height: 17px;
                 }
             }
             &_dydx {
-                svg {
+                img {
                     width: 64.14px;
                     height: 20px;
                 }
@@ -52,6 +51,6 @@
         }
     }
     &__items > *:not(:last-child) {
-        margin-right: 69px;
+        margin-right: 65px;
     }
 }
