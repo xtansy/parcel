@@ -51,10 +51,12 @@
     transition: all #{$tr}s;
 }
 
-@mixin container($max-width: "120rem") {
+@mixin container($max-width: "120rem", $paddings: "16px") {
     width: 100%;
     max-width: #{$max-width};
     margin: 0 auto;
+    padding-right: #{$paddings};
+    padding-left: #{$paddings};
 }
 
 @mixin flexRowBetween {

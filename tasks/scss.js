@@ -11,7 +11,6 @@ import gulpSass from "gulp-sass";
 import compilSass from "sass";
 const sass = gulpSass(compilSass);
 import glob from "gulp-sass-glob";
-import webpCss from "gulp-webp-css";
 
 import { config } from "./index.js";
 

@@ -1,6 +1,10 @@
 .nav {
+    &__right {
+        display: flex;
+        align-items: center;
+    }
     width: 100%;
-    ul {
+    &__ul {
         @include flexRowBetween();
         li {
             cursor: pointer;
@@ -38,5 +42,82 @@
             min-height: 40px;
         }
         margin-right: 0;
+    }
+}
+
+.burger {
+    position: relative;
+    z-index: 999;
+    display: none;
+    width: 35px;
+    height: 20px;
+    &-line {
+        position: absolute;
+        height: 2px;
+        width: inherit;
+        background-color: $blue;
+    }
+    .second,
+    .third {
+        top: 8px;
+    }
+    .fourth {
+        top: 16px;
+    }
+    &__menu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-size: 32px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $blue;
+        z-index: 10;
+        &-list {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &-list > *:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}
+.burger_active {
+    .burger-line {
+        background-color: white;
+    }
+    .first,
+    .fourth {
+        display: none;
+    }
+    .second {
+        transition: 0.3s ease-in-out;
+
+        transform: rotate(45deg);
+    }
+    .third {
+        transition: 0.3s ease-in-out;
+
+        transform: rotate(-45deg);
+    }
+}
+.burger__menu_active {
+    display: block;
+}
+
+@media screen and (max-width: $lg) {
+    .nav__right {
+        display: none;
+    }
+    .burger {
+        display: block;
     }
 }
