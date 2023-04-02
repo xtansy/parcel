@@ -1,7 +1,9 @@
 .backed {
     padding-bottom: 32px;
+
     &__text {
         margin-bottom: 45px;
+
         h2 {
             font-weight: 700;
             font-size: 36px;
@@ -9,6 +11,7 @@
             color: $primary;
             margin-bottom: 15px;
         }
+
         p {
             font-weight: 400;
             font-size: 14px;
@@ -24,18 +27,22 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        &-upp > * {
+
+        &-upp>* {
             margin-bottom: 30px;
         }
+
         &-bot {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        &-bot > * {
+
+        &-bot>* {
             margin-bottom: 30px;
         }
+
         &-item {
             background: #d4d6db;
             border-radius: 4px;
@@ -44,10 +51,12 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px;
+
             svg {
                 width: 215px;
                 height: 122px;
             }
+
             &__content {
                 h4 {
                     margin-top: 15px;
@@ -57,6 +66,7 @@
                     line-height: 16px;
                     color: $primary;
                 }
+
                 &-icons {
                     svg {
                         cursor: pointer;
@@ -69,9 +79,35 @@
     }
 }
 
+
+@media screen and (max-width: 1282px) {
+    .backed {
+        &__items {
+            &-item {
+                max-width: 155px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .backed {
+        &__items {
+            &-item {
+                max-width: 30%;
+                flex-basis: 30%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $sm) {
     .backed {
         &__items {
+            &-item {
+                max-width: 255px;
+            }
+
             &-upp,
             &-bot {
                 flex-direction: column;

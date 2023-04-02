@@ -22,9 +22,11 @@ $white: white;
 body {
     font-family: Metropolis;
 }
+
 ._container {
     @include container($containerWidthLarge);
 }
+
 .button {
     cursor: pointer;
     border: none;
@@ -38,10 +40,40 @@ body {
     text-align: center;
     width: max-content;
 }
+
 .button_text {
     background: none;
     color: $blue;
     padding: 0;
+}
+
+.input {
+    &__input {
+        width: 96%;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+
+    &__icon {
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
 }
 
 @media screen and (max-width: $xl) {
@@ -49,16 +81,19 @@ body {
         max-width: $containerXL;
     }
 }
+
 @media screen and (max-width: $lg) {
     ._container {
         max-width: $containerLG;
     }
 }
+
 @media screen and (max-width: $md) {
     ._container {
         max-width: $containerMD;
     }
 }
+
 @media screen and (max-width: $sm) {
     ._container {
         max-width: $containerSM;
