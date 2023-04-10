@@ -19,9 +19,7 @@ $secondaryLight: #9998a4;
 $blue: #2962ef;
 $white: white;
 
-body {
-    font-family: Metropolis;
-}
+
 
 ._container {
     @include container($containerWidthLarge);
